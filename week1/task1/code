@@ -1,1 +1,14 @@
+TASK 1)
+Your first task is to extract multiple images from a video using "ffmpeg". 
+Download a youtube video of short duration, and extract multiple images from the video, using ffmpeg. 
+(In a linux environment this is pretty simple.) Search Google on how to use "ffmpeg" for extracting 
+multiple images from videos. Once you have done this, please post two or three photographs from the 
+video stream, and post the link to youtube video that you have used.
+
+
+=>commands in ffmpeg
+
+ffmpeg -i myvideo.mp4 frames_%04d.png
+
+youtube link: https://www.youtube.com/watch?v=-p1P4fdhaF8&pp=ygUEbmFwb9IHCQnZCgGHKiGM7w%3D%3D
 
