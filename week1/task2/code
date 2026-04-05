@@ -1,1 +1,13 @@
+In the first task you downloaded a video from YouTube (yt-dlp - utility in Linux) and chopped it into 
+frames of images using ffmpeg. Now, you should repeat the process once again, generating some 30 frames
+per second on a 1 minute continuous portion of the video (30x60 = 1800 images) creating around 1800 images.
+These 1800 images are to be re-converted into a video of 1 minute duration at frame rate of 30 (ffmpeg can be used here too).
+Upload the video and share the link to the video you created from images. 
 
+
+ffmpeg commands
+1)to get 1800 slides
+=>ffmpeg -ss 00:00:00 -t 60 -i test.mp4 -vf fps=30 frames_%04d.png
+
+2)to get a 1min video
+=>ffmpeg -framerate 30 -i frames_%04d.png -c:v libx264 -pix_fmt yuv420p output.mp4
