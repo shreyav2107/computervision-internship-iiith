@@ -1,1 +1,10 @@
+ please identify a song https://pixabay.com/music/search/1%20minute/ from any public portal, 
+clip it to one minute duration using some utility like audacity, and merge audio track with your video 
+(using ffmpeg) you just created from Task 02.. Please upload the video, and share the link...  
 
+there would be many who might guide you) Cheers !!
+
+Audio link:https://pixabay.com/music/video-games-bread-227490/
+
+ffmpeg command:
+=>ffmpeg -i output.mp4 -i audiotest.mp3 -c:v copy -c:a aac -shortest audio_output.mp4
