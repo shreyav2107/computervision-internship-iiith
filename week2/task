@@ -1,1 +1,17 @@
+a) You should create a virtual environment for Python using venv. 
+The requisite documentation can be found at https://www.w3schools.com/python/python_virtualenv.asp or 
+https://docs.python.org/3/library/venv.html. This will result in earmarking a specific directory as virtual environment, 
+for all the future tasks for this internship, where all the programs would be executed. Usually in Linux, 
+some directory  (Eg: /home/user/Documents/summer) under Documents folder would suffice. Before installing/executing any 
+package, you should first activate the virtual environment using command (Eg: $ source bin/activate). 
+(b) After activating virtual environment, you should install ultralytics package, (will need internet connection). 
+This is done with the command $ pip install -U ultralytics (in Linux machines).  Thereafter, the package will get 
+installed in your local machine (please top-up your mobile data).  (c) After installation, run the object detection
+code on pretrained YOLO26 model, given at https://www.ultralytics.com/glossary/object-detection. Post the output in the 
+discussion channel. 
+
+
+Commands used:
+After creating python virtual environment
+=>yolo predict model=yolov8n.pt source="https://ultralytics.com/images/bus.jpg"
 
